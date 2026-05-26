@@ -1,0 +1,50 @@
+# IDE 和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 系统文件
+Thumbs.db
+desktop.ini
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 依赖文件夹（如果有 Node.js 项目）
+node_modules/
+jspm_packages/
+
+# 构建输出
+dist/
+build/
+.out/
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# SSH 密钥（千万不要提交）
+*.pem
+*.key
+*.pub
+
+# 临时文件
+*.tmp
+*.temp
+*.cache
+
+# 操作系统生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
