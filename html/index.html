@@ -1,8 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head><title>My Web</title></head>
+<head>
+    <meta charset="UTF-8">
+    <title>我的个人网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .profile-img {
+            width: 200px;
+            border-radius: 50%;
+            margin: 20px 0;
+            border: 3px solid #4CAF50;
+        }
+        .info {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            text-align: left;
+            display: inline-block;
+            width: 60%;
+        }
+        .info p {
+            margin: 10px 0;
+        }
+        .deploy-time {
+            color: #666;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
 <body>
-  <h1>Hello, Lifuqiang</h1>
-  <p>This is deployed automatically.</p>
+    <div class="container">
+        <h1>欢迎来到我的个人网站</h1>
+        <img src="my-photo.jpg" alt="我的照片" class="profile-img">
+        <div class="info">
+            <p><strong>姓名：</strong>Ifuqiang</p>
+            <p><strong>学号：</strong>2024001XXX</p>
+            <p><strong>专业：</strong>软件工程</p>
+            <p><strong>学校：</strong>北方民族大学</p>
+            <p><strong>简介：</strong>我是 Ifuqiang，正在学习 DevOps 和自动化部署技术。</p>
+        </div>
+        <div class="deploy-time">
+            <p>部署时间：<span id="time"></span></p>
+            <p>服务器 IP：<span id="ip"></span></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('time').innerText = new Date().toLocaleString();
+        document.getElementById('ip').innerText = window.location.hostname;
+    </script>
 </body>
 </html>
